@@ -25,7 +25,7 @@ const soundForest = new Audio(
 const soundRain = new Audio(
 '../assets/rain.wav'
 )
-const soundCoffeshop = new Audio(
+const soundCoffeeshop = new Audio(
 '../assets/coffee-shop.wav'
 )
 const soundFirePlace = new Audio(
@@ -34,8 +34,8 @@ const soundFirePlace = new Audio(
 const soundsControls = {
     forest:document.querySelector('.forest'),
     rain: document.querySelector('.rain'),
-    coffe: document.querySelector('.coffe'),
-    larera: document.querySelector('.fireplace')
+    coffee: document.querySelector('.coffee'),
+    fireplace: document.querySelector('.fireplace')
 }
 
 //Timer
@@ -105,34 +105,34 @@ function countdonw() {
 //Sounds
     soundForest.loop
     soundRain.loop
-    soundCoffeshop.loop
+    soundCoffeeshop.loop
     soundFirePlace.loop
 //Forest
 soundsControls.forest.addEventListener('click', () => {
     soundRain.pause()
-    soundCoffeshop.pause()
+    soundCoffeeshop.pause()
     soundFirePlace.pause()
     soundForest.play()
 })
 
 soundsControls.rain.addEventListener('click', () => {
     soundForest.pause()
-    soundCoffeshop.pause()
+    soundCoffeeshop.pause()
     soundFirePlace.pause()
     soundRain.play()
 })
 
-soundsControls.coffe.addEventListener('click', () => {
+soundsControls.coffee.addEventListener('click', () => {
     soundForest.pause()
     soundRain.pause()
     soundFirePlace.pause()
-    soundCoffeshop.play()
+    soundCoffeeshop.play()
 })
 
-soundsControls.larera.addEventListener('click', () => {
+soundsControls.fireplace.addEventListener('click', () => {
     soundForest.pause()
     soundRain.pause()
-    soundCoffeshop.pause()
+    soundCoffeeshop.pause()
     soundFirePlace.play()
 })
 
@@ -140,7 +140,7 @@ soundsControls.larera.addEventListener('click', () => {
 soundOff.addEventListener('click', () => {
     soundForest.pause()
     soundRain.pause()
-    soundCoffeshop.pause()
+    soundCoffeeshop.pause()
     soundFirePlace.pause()
 })
 
