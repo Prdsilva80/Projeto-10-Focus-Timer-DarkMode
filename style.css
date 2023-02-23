@@ -88,13 +88,6 @@ main {
   padding: 2rem;
 }
 
-.controlsSounds {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  padding: 0.8rem 2rem ;
-}
-
 .timer{
   display: flex;
   color: #323238;

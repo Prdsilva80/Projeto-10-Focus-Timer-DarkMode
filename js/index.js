@@ -6,7 +6,6 @@ const principal = document.querySelector('main')
 //Variáveis Ligar e Desligar Som
 const soundButton = document.querySelector('.sounds')
 const playTimer = document.querySelector('.play')
-const soundOff = document.querySelector('.sound-off')
 
 //Variáveis Timer
 const timer = document.querySelector('.timer')
@@ -134,14 +133,6 @@ soundsControls.fireplace.addEventListener('click', () => {
     soundRain.pause()
     soundCoffeeshop.pause()
     soundFirePlace.play()
-})
-
-//Sound On and Sound Off
-soundOff.addEventListener('click', () => {
-    soundForest.pause()
-    soundRain.pause()
-    soundCoffeeshop.pause()
-    soundFirePlace.pause()
 })
 
 //Dark Mode
