@@ -20,16 +20,16 @@ let timerTimeOut
 
 //Variáveis Sons
 const soundForest = new Audio(
-'../assets/forest.wav'
+'../assets/forest.mp3'
 )
 const soundRain = new Audio(
-'../assets/rain.wav'
+'../assets/rain.mp3'
 )
 const soundCoffeeshop = new Audio(
-'../assets/coffee-shop.wav'
+'../assets/coffee-shop.mp3'
 )
 const soundFirePlace = new Audio(
-'../assets/fireplace.wav'
+'../assets/fireplace.mp3'
 )
 const soundsControls = {
     forest:document.querySelector('.forest'),
