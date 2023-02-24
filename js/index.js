@@ -102,11 +102,11 @@ function countdonw() {
 
 
 //Sounds
-    soundForest.loop
-    soundRain.loop
-    soundCoffeeshop.loop
-    soundFirePlace.loop
-//Forest
+    soundForest.loop = true
+    soundRain.loop = true
+    soundCoffeeshop.loop = true
+    soundFirePlace.loop = true
+
 soundsControls.forest.addEventListener('click', () => {
     soundRain.pause()
     soundCoffeeshop.pause()
@@ -134,6 +134,19 @@ soundsControls.fireplace.addEventListener('click', () => {
     soundCoffeeshop.pause()
     soundFirePlace.play()
 })
+
+let isSoundPlaying = false;
+
+function playSound(sound) {
+  if (isSoundPlaying) {
+      sound.pause();
+      isSoundPlaying = false;
+  } else {
+      sound.play();
+      isSoundPlaying = true;
+  }
+}
+
 
 //Dark Mode
 darkMode.addEventListener('click', () => {
