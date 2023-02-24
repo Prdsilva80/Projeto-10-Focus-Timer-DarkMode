@@ -135,18 +135,6 @@ soundsControls.fireplace.addEventListener('click', () => {
     soundFirePlace.play()
 })
 
-let isSoundPlaying = false;
-
-function playSound(sound) {
-  if (isSoundPlaying) {
-      sound.pause();
-      isSoundPlaying = false;
-  } else {
-      sound.play();
-      isSoundPlaying = true;
-  }
-}
-
 
 //Dark Mode
 darkMode.addEventListener('click', () => {
